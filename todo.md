@@ -1,0 +1,3 @@
+- [ ] Acrescentar mais uma funcao de movimentacao para o segmento
+  - Movimentacao braco
+  - Movimentacao perna

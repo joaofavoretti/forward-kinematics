@@ -1,23 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script src="lib/p5.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
-  </head>
-  <body>
-    <h1>Forward Kinematics code example</h1>
-    <script src="Segment.js"></script>
-    <script src="sketch.js"></script>
-    
-    <style>
-      h1 {
-        text-align: center;
-      }
-      main {
-        display: flex;
-        justify-content: center;
-      }
-    </style>
-  </body>
+<head>
+  <meta charset="utf-8" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="lib/p5.js"></script>
+  <script src="Segment.js"></script>
+  <script src="sketch.js"></script>
+</head>
+<body class="position-relative">
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <!-- Page title -->
+                <div class="nav col-3 d-flex align-items-center">
+                    <span>Forward Kinematics</span>
+                </div>
+
+                <!-- Range input parameter 1 -->
+                <div class="col-3 d-flex flex-column justify-content-between align-items-center">
+                    <label>Parameter 1:</label>
+                    <div class="d-flex">
+                        <input type="range" min="10" max="500" class="form-range" id="param1Range">
+                        <span class="ps-2" id="param1Value">50</span>
+                    </div>
+                </div>
+
+                <!-- Range input parameter 2 -->
+                <div class="col-3 d-flex flex-column justify-content-between align-items-center">
+                    <label>Parameter 2:</label>
+                    <div class="d-flex">
+                        <input type="range" min="10" max="200" class="form-range" id="param2Range">
+                        <span class="ps-2" id="param2Value">50</span>
+                    </div>
+                </div>
+
+                <!-- Select input -->
+                <div class="col-3 d-flex align-items-center">
+                    <select class="form-select" aria-label="Movement" id="movement">
+                        <option selected value="sin_movement">Sin movement</option>
+                    </select>
+                    <button type="button" id="refreshBtn" class="ms-2 btn btn-light">
+                        <img src="assets/play_arrow_black.svg" />
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <footer class="footer mt-auto py-3 w-100 bg-light position-absolute" style="bottom: -3rem;">
+        <div class="container">
+          <span class="text-muted">&copy; João Pedro Favoretti, 2021. The repository is open source and hosted on <a href="https://github.com/joaofavoretti/WebSortingVisualizer">github</a>, feel free to contribute!</span>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</body>
 </html>

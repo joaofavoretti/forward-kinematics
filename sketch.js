@@ -1,9 +1,11 @@
+// Propriedades do conjunto de segmentos que a tela possui
 const n = 10;
 const size = 300 / n;
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(windowWidth, windowHeight / 2);
   
+  // Array de segmentos que será manipulado
   segments = []
   let newSegment = new Segment(size, radians(0));
   segments.push(newSegment);
