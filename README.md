@@ -1,6 +1,6 @@
 # Forward Kinematics
 
-**Version 1.0.0**
+**Version IN DEVELOPMENT**
 
 This is just an experiment to learn about forward kinematics. I just created a repository to host the page on Github.
 
